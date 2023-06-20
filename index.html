@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper & Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+</head>
+<body>
+
+    <section id="content">
+        <div class="RPS">
+            <header>
+                <h1 class="titles">ROCK PAPER SCISSORS</h1>
+                <div class="scores">
+                    <div class="user-div">
+                        <h3>YOU</h3>
+                        <span class="user-score">0</span>
+                    </div>
+                    <div class="computer-div">
+                        <h3>COMPUTER</h3>
+                        <span class="computer-score">0</span>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div id="game">
+                    <div class="game-grade">
+                        <div>
+                            <h3>You</h3>
+                            <div class="game-btn user-btn"></div>
+                        </div>
+                        <div>
+                            <h3>Computer</h3>
+                            <div class="game-btn computer-btn"></div>
+                        </div>
+                    </div>
+                    <h2 class="game-result"></h2>
+                </div>
+
+                <div class="main-upper">
+                    <button class="game-btn rock"></button>
+                    <button class="game-btn paper"></button>
+                </div>
+                <div class="main-bottom">
+                    <button class="game-btn scissors"></button>
+                </div>
+            </main>
+            <footer>
+                <button class="footer-btn"><span>Ready to play? <br> Choose your move!</span></button>
+            </footer>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

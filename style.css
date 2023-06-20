@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana;
+}
+
+#content {
+    min-width: 280px;
+    min-height: 100vh;
+    background: #0F2348;
+    padding: 20px;
+}
+
+.RPS{
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    border: 5px solid #BABABA;
+    border-radius: 2rem;
+    padding: 20px;
+}
+
+.titles {
+    color: #fff;
+    max-width: 100px;
+    font-size: clamp(22px, 5vw, 40px);
+    margin: auto 0;
+    line-height: 1.2;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    text-align: center;
+}
+
+.scores>div {
+    font-size: clamp(10px, 2vw, 17px);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.scores>div>span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.main-upper {
+    display: flex;
+    gap: 5vw;
+}
+
+.main-bottom {
+    display: flex;
+}
+
+.game-btn {
+    width: 109px;
+    height: 109px;
+    border-radius: 55px;
+    background: #fff;
+}
+
+.rock {
+    background-image: url(/images/rock.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 9px solid #c98b00;
+    box-shadow: inset -1px 4px 9px rgba(0, 0, 0, 1);
+}
+
+.paper {
+    background-image: url(/images/paper1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 9px solid #0086b9;
+    box-shadow: inset -2px 5px 6px rgba(0, 0, 0, 1);
+}
+
+.paper2 {
+    background-image: url(/images/paper2.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 9px solid #0086b9;
+    box-shadow: inset -2px 5px 6px rgba(0, 0, 0, 1);
+}
+
+.scissors {
+    background-image: url(/images/scissors1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 9px solid #af0000;
+    box-shadow: inset -2px 5px 6px rgba(0, 0, 0, 1);
+}
+
+.scissors2 {
+    background-image: url(/images/scissors2.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 9px solid #af0000;
+    box-shadow: inset -2px 5px 6px rgba(0, 0, 0, 1);
+}
+
+#game {
+    flex-direction: column;
+    gap: 3vh;
+    text-align: center;
+    display: none;
+}
+
+.computer-btn {
+    transform: rotateY(180deg);
+}
+
+.game-grade {
+    display: flex;
+    gap: 15vw;
+    text-align: center;
+}
+
+.game-grade>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    color: #fff;
+    font-size: clamp(20px, 2vw, 30px);
+    justify-content: center;
+    align-items: center;
+}
+
+.game-result {
+    font-size: clamp(40px, 5vw, 70px);
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+}
+
+.footer-btn {
+    display: block;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 3px;
+  }
+  
+  .footer-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    background-size: 25% 100%;
+    animation: slide-background 0.75s linear infinite;
+    animation-play-state: paused;
+    transform: translateX(-25%);
+    transition: transform 0.25s ease-out;
+  }
+  
+  .footer-btn:before {
+    animation-play-state: running;
+    transform: translateX(0%);
+  }
+  
+  @keyframes slide-background {
+    to {
+      transform: translateX(-25%);
+    }
+  }
+  
+  .footer-btn span {
+    position: relative;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    background: #fff;
+    border-radius: 3px;
+    height: 100%;
+  }
+  
